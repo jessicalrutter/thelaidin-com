@@ -190,5 +190,17 @@
   <div class="wrap">LaidIn&trade; &middot; Coming Fall 2026</div>
 </footer>
 
+<script>
+  // "Join the founding list" buttons: scroll to the form, then put the cursor in the first field
+  document.querySelectorAll('a[href="#join"]').forEach(function(a){
+    a.addEventListener('click', function(){
+      setTimeout(function(){
+        var f = document.querySelector('.formkit-form input, .signup input');
+        if (f) f.focus({preventScroll:true});
+      }, 650);
+    });
+  });
+</script>
+
 </body>
 </html>
