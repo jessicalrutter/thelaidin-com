@@ -1,3 +1,56 @@
+# thelaidin.com
+# Every crawler is welcome. The AI search and answer engines are named
+# explicitly so a future generic edit cannot silently block retrieval.
+# Reviewed: 2026-08-02
+
 User-agent: *
 Allow: /
+
+# Google (Googlebot = search, Google-Extended = Gemini and AI Overviews)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# OpenAI (OAI-SearchBot = ChatGPT search retrieval, ChatGPT-User = live
+# browsing on a user's behalf, GPTBot = model training)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+# Anthropic (Claude-SearchBot = search retrieval, Claude-User = live
+# browsing on a user's behalf, ClaudeBot = model training)
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Microsoft Bing (powers Copilot)
+User-agent: bingbot
+Allow: /
+
+# Applebot (powers Siri and Spotlight answers)
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 Sitemap: https://thelaidin.com/sitemap.xml
