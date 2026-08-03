@@ -2,6 +2,18 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-44G3JX0T26"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-44G3JX0T26');
+  // Landing here means the double opt-in link was clicked, so this is a
+  // CONFIRMED subscriber, not just a form submit. This is the honest
+  // conversion signal; join_founding_list only records the submit.
+  gtag('event', 'founding_list_confirmed');
+</script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>You are confirmed | LaidIn</title>
 <meta name="robots" content="noindex,follow">
